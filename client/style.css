@@ -1,0 +1,45 @@
+body {
+	margin-left: 50px;
+}
+h4 {
+	text-decoration: underline;
+}
+button {
+	background-color: blue;
+	color: white;
+	margin-left: 5px;
+}
+input {
+	border: 2px solid black;
+}
+#search_box {
+	margin-top: 40px;
+	margin-left: 200px;
+} 
+table {
+	margin-top: 5px;
+	width: 530px;
+	border-collapse: collapse;
+	border: 2px solid black;
+}
+tr:nth-child(odd) {
+	background-color: rgb(226, 223, 223);
+}
+td, th {
+	border-right: 2px solid black;
+	text-align: left;
+	height: 30px;
+}
+#remove {
+	text-decoration: none;
+	background-color: red;
+	color: white;
+	box-shadow: 2px 2px black;
+	padding: 3px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+th {
+	background-color: rgb(173, 167, 167);
+}

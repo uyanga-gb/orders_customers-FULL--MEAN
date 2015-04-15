@@ -1,0 +1,38 @@
+<div ng-controller='ordersController'>
+    <h4>Add a new order</h4>
+    <form ng-submit='new_order()'>
+    	Customer <select ng-model='newOrder.customer_name'>
+            <option ng-repeat="customer in customers">{{customer.name}}</option>
+            </select> 
+        Order: <select ng-model="newOrder.quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+             <select ng-model="newOrder.item">
+                <option>Nike Shoes</option>
+                <option>Black Belts</option>
+                <option>Ice Creams</option>
+                <option>Candies</option>
+            </select> 
+          	<button type='submit'>Order</button> 
+    </form>
+    <form id="search_box">
+    	<input type="text" name="search" ng-model="filter_name" placeholder="filter..."/>
+    </form>
+    <table>
+    	<thead>
+    		<th>Customer Name</th>
+    		<th>Product</th>
+            <th>Quantity</th>
+            <th>Date</th>
+    	</thead>
+    	<tr ng-repeat="order in orders">
+            <td><span ng-bind='order.customer_name'></span></td>
+            <td><span ng-bind='order.name'></span></td>
+            <td><span ng-bind='order.quantity'></span></td>
+            <td><span ng-bind='order.date'></span></td>
+        </tr>
+    </table>  
+</div>
